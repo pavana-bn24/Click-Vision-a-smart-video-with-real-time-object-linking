@@ -1,13 +1,19 @@
-**ClickVision – Smart Video with Real-Time Object Linking**
-//
-**Project Overview**
-//
-ClickVision is a smart video system that allows users to interact with objects appearing inside a video. The system identifies objects in the video and links them with useful information in real time. When an object appears, the system highlights it and provides related details, making the video more interactive and informative.
-This project focuses on improving how users explore video content by allowing them to directly interact with elements inside the video frame.
-//
+****ClickVision – Smart Video with Real-Time Object Linking****
+
+**Overview**
+
+ClickVision is an interactive smart video system that enables users to explore objects appearing inside a video in real time. The system identifies objects within video frames and links them with relevant information. When an object appears, it is highlighted and associated details are displayed, making the video more engaging and informative.
+
+The goal of this project is to enhance the way users interact with video content by allowing them to directly explore elements inside the video frame.
+
 **Features**
-Detects objects appearing in video frames
-Links detected objects with related information
-Provides an interactive viewing experience
-Highlights objects in real time
-Displays object details while the video is playing
+
+Real-time detection of objects in video frames
+
+Highlights detected objects during playback
+
+Links objects with relevant information
+
+Interactive and informative video experience
+
+Displays object details while the video is running
