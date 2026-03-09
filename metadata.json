@@ -1,0 +1,57 @@
+{
+    "boat_ear_drop": {
+        "info": "boAt Airdopes Loop Bluetooth Earbuds (Lavender Mist)",
+        "link": "https://www.boat-lifestyle.com/products/airdopes-loop-lavender-mist",
+        "buy": "https://www.amazon.in/boAt-Airdopes-Loop-Conduction-Earphones/dp/B0DJ8KYK73"
+    },
+    "cloud_computing": {
+        "info": "Cloud Computing Book",
+        "link": "https://en.wikipedia.org/wiki/Cloud_computing",
+        "buy": "https://www.amazon.in/Cloud-Computing-Practical-Approach-Velte/dp/0070683514"
+    },
+    "computer_network": {
+        "info": "Computer Networks Book",
+        "link": "https://en.wikipedia.org/wiki/Computer_network",
+        "buy": "https://www.amazon.com/s?k=computer+networks+book"
+    },
+    "doing_data_science": {
+        "info": "Doing Data Science Book",
+        "link": "https://en.wikipedia.org/wiki/Data_science",
+        "buy": "https://www.amazon.com/s?k=doing+data+science+book"
+    },
+    "lipstick": {
+        "info": "lipstick",
+        "link": "https://en.wikipedia.org/wiki/Lipstick",
+        "buy": "https://www.amazon.in/Chanel-Rouge-Hydrating-Vibrant-Colour/dp/B07Q5NNW7K"
+    },
+    "mrf": {
+        "info": "MRF Limited English Willow Hurricane batting cricket bat",
+        "link": "https://en.wikipedia.org/wiki/MRF_(company)",
+        "buy": "https://www.amazon.in/Limited-English-Cricket-Hurricane-Batting/dp/B08VL2H9C7"
+    },
+    "operating_system": {
+        "info": "Operating Systems Book",
+        "link": "https://en.wikipedia.org/wiki/Operating_system",
+        "buy": "https://www.amazon.com/s?k=operating+systems+textbook"
+    },
+    "tennis_racket": {
+        "info": "Wilson Pro Staff 97 V14 Performance Tennis Racket - Grip Size 3-4 3/8",
+        "link": "https://en.wikipedia.org/wiki/Wilson_ProStaff_Original_6.0",
+        "buy": "https://www.amazon.in/dp/B0BTS5C2TW?ref=cm_sw_r_cp_ud_dp_XTYY46ZK7E242YMSF776_1&ref_=cm_sw_r_cp_ud_dp_XTYY46ZK7E242YMSF776_1&social_share=cm_sw_r_cp_ud_dp_XTYY46ZK7E242YMSF776_1&th=1"
+    },
+    "titan_automatic_watch": {
+        "info": "Titan Mechanical Automatic Skeleton Dial Watch (Rose Gold, NT90110WM01)",
+        "link": "https://www.titan.co.in/product/titan-mechanical-watch-for-men-90110wm01.html",
+        "buy": "https://www.amazon.in/Titan-Skeletal-Automatic-Stainless-Steel/dp/B09ZHX2G61"
+    },
+    "gucci": {
+        "info": "Gucci fragrance gift set (Bloom + Flora Gorgeous Jasmine + Flora Gorgeous Gardenia)",
+        "link": "https://amzn.in/d/5wL5ufh",
+        "buy": "https://amzn.in/d/5wL5ufh"
+    },
+    "viral": {
+        "info": "Viral Alkaline Water Bottle with built-in temperature display and fruit infuser",
+        "link": "https://amzn.in/d/cl8MBXK",
+        "buy": "https://amzn.in/d/cl8MBXK"
+    }
+}

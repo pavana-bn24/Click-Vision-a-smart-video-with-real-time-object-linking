@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register | ClickVision</title>
+  <style>
+    /* Fallback class for unsupported blur */
+    .no-blur body {
+      background-color: #123; /* solid fallback color */
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+
+      /* Background fallback chain */
+      background-color: #123; /* solid fallback */
+      background-image: url('https://static.vecteezy.com/system/resources/previews/003/812/605/original/female-operator-with-the-modern-technology-system-operation-free-vector.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+
+      /* Blur fallback check */
+      backdrop-filter: blur(5px);
+    }
+
+    @supports not (backdrop-filter: blur(5px)) {
+      body {
+        background-color: #123; /* fallback solid color */
+      }
+    }
+
+    .container {
+      background: rgba(22, 78, 116, 0.6); /* fallback background */
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      color: #fff;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      animation: slideDown 1s ease-out;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    input[type="text"], input[type="password"], button {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    input[type="text"], input[type="password"] {
+      background: #ffffffcc;
+      color: #000;
+    }
+
+    button {
+      background: #527c17;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #9442b1;
+      transform: scale(1.05);
+    }
+
+    p {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    a {
+      color: yellow;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>📝 Register </h2>
+    <form method="post" action="/register">
+      <input type="text" name="username" placeholder="USERNAME" required>
+      <!-- Password must contain at least 1 uppercase, 1 number, 1 special char, min length 8 -->
+      <input type="password" name="password" placeholder="PASSWORD" required
+             pattern="(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}"
+             title="Min 8 chars, at least 1 uppercase, 1 number and 1 special character">
+      <small style="color:#fff;opacity:0.9;">Password must be at least 8 characters, include one uppercase letter, one number and one special character.</small>
+      <button type="submit">Register</button>
+    </form>
+    <p>Already registered? <a href="/login">Login here</a></p>
+  </div>
+
+  <!-- Optional JS fallback detection -->
+  <script>
+    if (!CSS.supports("backdrop-filter", "blur(5px)")) {
+      document.body.classList.add("no-blur");
+    }
+  </script>
+</body>
+</html>

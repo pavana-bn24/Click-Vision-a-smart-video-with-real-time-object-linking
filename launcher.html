@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ClickVision Launcher</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+
+      /* Fallback chain */
+      background-color: #123; /* solid fallback */
+      background-image: url('https://static.vecteezy.com/system/resources/previews/003/812/605/original/female-operator-with-the-modern-technology-system-operation-free-vector.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+
+      /* Blur effect */
+      backdrop-filter: blur(5px);
+    }
+
+    @supports not (backdrop-filter: blur(5px)) {
+      body {
+        background-color: #123; /* fallback if blur unsupported */
+      }
+    }
+
+    .container {
+      background: rgba(22, 78, 116, 0.6); /* fallback background */
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    @supports (box-shadow: 0 0 30px rgba(0, 0, 0, 0.5)) {
+      .container {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      animation: slideDown 1s ease-out;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    select, input[type="file"], button {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    select, input[type="file"] {
+      background: rgba(222, 218, 224, 0.6);
+      color: #000;
+    }
+
+    button {
+      background: #527c17;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #45a049;
+      transform: scale(1.05);
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+      <h2 style="margin:0;">🚀 Launch ClickVision</h2>
+      <a href="/logout" style="background:#c0392b;color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:600;">Logout</a>
+    </div>
+    <form method="post" action="/launch" enctype="multipart/form-data">
+      <label>Select Mode:</label>
+      <select name="mode">
+        <option value="live">Live Camera</option>
+        <option value="video">Upload Video</option>
+      </select>
+      <label>Upload Video (if selected):</label>
+      <input type="file" name="videoFile">
+      <button type="submit">Launch</button>
+    </form>
+  </div>
+
+  <!-- JS fallback detection -->
+  <script>
+    if (!CSS.supports("backdrop-filter", "blur(5px)")) {
+      document.body.style.backgroundColor = "#123";
+    }
+  </script>
+</body>
+</html>
